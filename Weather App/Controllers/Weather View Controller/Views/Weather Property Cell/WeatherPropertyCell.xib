@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="WeatherPropertyCell" rowHeight="70" id="P4E-Ri-KRe" userLabel="WeatherPropertiesCell" customClass="WeatherPropertyCell" customModule="Weather_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P4E-Ri-KRe" id="PpC-Oy-8TD">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-Hj-6fV">
+                        <rect key="frame" x="15" y="8" width="345" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="jXe-cF-rci"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDC-Xc-Vim">
+                        <rect key="frame" x="15" y="36" width="345" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nDC-Xc-Vim" firstAttribute="top" secondItem="dlH-Hj-6fV" secondAttribute="bottom" constant="8" id="3OG-qa-LFT"/>
+                    <constraint firstAttribute="trailing" secondItem="nDC-Xc-Vim" secondAttribute="trailing" constant="15" id="Kks-Tq-iD0"/>
+                    <constraint firstItem="dlH-Hj-6fV" firstAttribute="top" secondItem="PpC-Oy-8TD" secondAttribute="top" constant="8" id="ef2-aK-oVY"/>
+                    <constraint firstItem="nDC-Xc-Vim" firstAttribute="leading" secondItem="PpC-Oy-8TD" secondAttribute="leading" constant="15" id="mbc-uQ-GuR"/>
+                    <constraint firstItem="dlH-Hj-6fV" firstAttribute="leading" secondItem="PpC-Oy-8TD" secondAttribute="leading" constant="15" id="qnW-Rc-YWq"/>
+                    <constraint firstAttribute="trailing" secondItem="dlH-Hj-6fV" secondAttribute="trailing" constant="15" id="wps-IM-kMu"/>
+                    <constraint firstAttribute="bottom" secondItem="nDC-Xc-Vim" secondAttribute="bottom" constant="8" id="zPS-EW-THe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <connections>
+                <outlet property="parameterLabel" destination="dlH-Hj-6fV" id="GID-yB-t07"/>
+                <outlet property="valueLabel" destination="nDC-Xc-Vim" id="Z2Z-kD-5hI"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="-74.662668665667169"/>
+        </tableViewCell>
+    </objects>
+</document>
